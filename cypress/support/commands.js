@@ -81,7 +81,7 @@ Cypress.Commands.add('listProduct', () => {
 //Verificar estoque
 Cypress.Commands.add('checkStock', () => {
     cy.request({
-        url:'https://eway2-api-teste.azurewebsites.net/produto/Geladeira%20LG/estoque',
+        url:'https://eway2-api-teste.azurewebsites.net/produto/Microondas%20Mondial/estoque',
         method: 'GET'
     }).then(({status, body}) => {
         expect(status).to.equal(200)
