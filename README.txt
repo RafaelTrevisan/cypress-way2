@@ -12,6 +12,8 @@ Obs: Necessita da instalação do java
 Obs²: O plugin Allure é não está compativel com as novas versões do Cypress
 Utilizar a versão @12.2.0
 
+terminal utilizado: git bash
+
 Para realizar testes com allure
 npx cypress run --env allure=true
 
