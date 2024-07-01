@@ -20,7 +20,7 @@ describe('Way2', () => {
         it('Verifica a existência de estoque de um produto', () => {
             
             const menu = 'Verifica a existencia de estoque de um produto'
-            const desc = 'Geladeira LG'
+            const desc = 'Microondas Mondial'
 
             cy.AddDesc(menu, desc)
             //Validação do schema
