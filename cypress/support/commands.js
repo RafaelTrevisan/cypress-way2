@@ -89,6 +89,15 @@ Cypress.Commands.add('checkStock', () => {
     }) 
 })
 
+//Verificar retorno de estoque inválido
+Cypress.Commands.add('checkStockInvalid', () => {
+    cy.request({
+        url:'https://eway2-api-teste.azurewebsites.net/produto/teste/estoque',
+        method: 'GET',
+        failOnStatusCode: false
+    })
+})
+
 //Adicionar produto no carrinho
 Cypress.Commands.add('addProductToCar', () => {
     cy.request({
