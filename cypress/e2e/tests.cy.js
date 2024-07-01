@@ -99,6 +99,21 @@ describe('Way2', () => {
 
             cy.get('.invalid').should('be.visible')
         });
+
+        it('Validar produto incorreto', () => {
+            const menu = 'Verifica a existencia de estoque de um produto'
+            const desc = 'teste'
+            const result = 'Não foi encontrado estoque disponível para o produto teste'
+
+            cy.AddDesc(menu, desc)
+
+            cy.checkStockInvalid()
+
+            cy.contains(result).should('be.visible')
+
+            cy.closeMenu(menu)
+            
+        });
     });
        
 });    
