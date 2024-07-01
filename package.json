@@ -1,0 +1,14 @@
+{
+  "name": "cypress-way2",
+  "version": "1.0.0",
+  "description": "Teste de automação Way2",
+  "main": "index.js",
+  "author": "Rafael Trevisan de Mello",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "ajv": "^8.16.0",
+    "allure-commandline": "^2.29.0",
+    "cypress": "^12.2.0"
+  }
+}

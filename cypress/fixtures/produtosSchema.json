@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "sku",
+      "descricao",
+      "precoUnitario",
+      "quantidade"
+    ],
+    "properties": {
+      "sku": {
+        "type": "integer"
+      },
+      "descricao": {
+        "type": "string"
+      },
+      "precoUnitario": {
+        "type": "integer"
+      },
+      "quantidade": {
+        "type": "integer"
+      }
+    }
+  }
+}
